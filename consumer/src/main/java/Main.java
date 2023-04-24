@@ -1,6 +1,7 @@
-import org.example.service.Service;
+import org.example.service.CurrencyConverter;
 
 import java.util.Scanner;
+import java.util.ServiceLoader;
 
 public class Main {
 
@@ -8,7 +9,19 @@ public class Main {
     public static void main(String[] args) {
 
         printMenu();
-        int choice = sc.nextInt();
+        loadCurrencyConverters();
+
+
+
+
+    }
+
+    private static void loadCurrencyConverters() {
+        ServiceLoader<CurrencyConverter> currencyConverters = ServiceLoader.load(CurrencyConverter.class);
+
+        for (var converters : currencyConverters) {
+            System.out.println(converters.getCurrencyConverter());
+        }
     }
 
     private static void printMenu() {
