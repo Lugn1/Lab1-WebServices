@@ -1,3 +1,5 @@
+package org.example.consumer;
+
 import org.example.service.CurrencyConverter;
 
 import java.util.Scanner;
