@@ -1,12 +1,10 @@
 package org.example.service;
-public class Service {
-    public String getBackendService() {
-        return "Hello from Backend";
+public interface Service {
+     String getBackendService();
 
 
         // add backend methods
         // valutomväxlare?
         // språk översättare?
 
-    }
 }
