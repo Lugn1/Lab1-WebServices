@@ -5,6 +5,8 @@ import org.example.service.CurrencyConverter;
 
 module org.example.provider {
     requires org.example.service;
-    provides CurrencyConverter with EUROConvert, GBPConvert, USDConvert;
+    exports org.example.provider;
+    provides CurrencyConverter with GBPConvert, USDConvert, EUROConvert;
+
 
 }
