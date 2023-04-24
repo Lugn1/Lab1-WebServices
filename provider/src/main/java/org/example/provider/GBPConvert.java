@@ -7,7 +7,7 @@ import org.example.service.annotation.Currency;
 public class GBPConvert implements CurrencyConverter {
     @Override
     public double getCurrencyConverter(double amount) {
-        System.out.println("GBPConvert created");
-        return amount * 11.63;
+        System.out.println("Svenska kronor till Brittiska pund:");
+        return amount * 0.078;
     }
 }

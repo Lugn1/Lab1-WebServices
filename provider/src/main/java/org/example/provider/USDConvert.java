@@ -7,7 +7,7 @@ import org.example.service.annotation.Currency;
 public class USDConvert implements CurrencyConverter {
     @Override
     public double getCurrencyConverter(double amount) {
-        System.out.println("USDConvert created");
-        return amount * 9.52;
+        System.out.println("Svenska kronor till Amerikanska dollar:");
+        return amount * 0.097;
     }
 }
